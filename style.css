@@ -1,7 +1,7 @@
 
 :root {
     --primary-color: #0b9bd3; 
-    --secondary-color: #fe6d1b;
+    --secondary-color: #f6404f;
     --accent-color: #f7a92d;
     --text-color: #414242;
 }
@@ -66,7 +66,7 @@ ul a:hover {
 .section-one-content h2 {
     font-size: 4rem;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .about-section {
@@ -80,8 +80,26 @@ ul a:hover {
     padding: 5rem 1rem; 
 }
 
+.about-content h2 {
+    margin-left: 50px;
+    font-weight: 700;
+}
+
 .about-content p {
     display: block;
+    background: var(--secondary-color);
+    height: 200px;
+    padding: 50px;
+    z-index: -1;
+    color: #fefffe;
+}
+
+.grid-section {
+    margin: 2rem 0;
+}
+
+.partner {
+    background: #f5f5f5;
 }
 
 .partner-content {
@@ -90,6 +108,46 @@ ul a:hover {
 
 .partner-content img {
     width: 150px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-img {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background: no-repeat center center !important;
+    object-fit: cover !important;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    width: 350px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #555;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #dedede;
+}
+
+.footer-section {
+    background: url('./img/hero1.jpg')  no-repeat center/cover;
 }
 
 /* Utils */
