@@ -12,8 +12,25 @@
     padding: 0;
 }
 
+html body {
+    overflow: none;
+
+}
+
 body {
     font-family: 'Alata', sans-serif;
+}
+
+.card img {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background: no-repeat center center !important;
+    object-fit: cover !important;
+}
+
+h2 {
+    letter-spacing: 1px;
 }
 
 .header a {
@@ -21,11 +38,11 @@ body {
 }
 
 ul a:hover {
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .section-one {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background: url('./img/hero.jpg')  no-repeat center/cover;
     position: relative;  
@@ -49,7 +66,7 @@ ul a:hover {
 .section-one-content h2 {
     font-size: 4rem;
     font-weight: 700;
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .about-section {
@@ -67,14 +84,34 @@ ul a:hover {
     display: block;
 }
 
+.partner-content {
+    padding: 1rem 0;
+}
+
+.partner-content img {
+    width: 150px;
+}
+
+/* Utils */
 .btn-1 {
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #fefffe;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: var(--secondary-color);
+    background: transparent;
+    letter-spacing: 1px;
+
+}
+
+.btn-2 {
     padding: 10px 15px;
     outline: none;
     border: none;
     border-radius: 5px;
     margin-left: 5px;
     color: #fefffe;
-    background: var(--secondary-color);
-    letter-spacing: 1px;
-
+    background: var(--primary-color);
+    letter-spacing: 1px;  
 }
