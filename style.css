@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #0b9bd3; 
+    --primary-color: #007afb; 
     --secondary-color: #f6404f;
     --accent-color: #f7a92d;
     --text-color: #414242;
@@ -12,8 +12,8 @@
     padding: 0;
 }
 
-html body {
-    overflow: none;
+html, body {
+    overflow: hidden;
 
 }
 
@@ -42,7 +42,7 @@ ul a:hover {
 }
 
 .section-one {
-    height: 550px;
+    height: 500px;
     width: 100%;
     background: url('./img/main-hero.jpg')  no-repeat center/cover;
     position: relative;  
@@ -130,12 +130,11 @@ ul a:hover {
     width: 150px;
 }
 
-/*Contact*/
+/*Contact
 .contact-container {
     height: 400px;
     margin: 2rem 0;
 }
-
 
 form {
     display: flex;
@@ -147,6 +146,10 @@ form {
 }
 
 input {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     padding: 10px;
     outline: none;
     width: 350px;
