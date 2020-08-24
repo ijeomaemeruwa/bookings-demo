@@ -42,9 +42,9 @@ ul a:hover {
 }
 
 .section-one {
-    height: 500px;
+    height: 550px;
     width: 100%;
-    background: url('./img/hero.jpg')  no-repeat center/cover;
+    background: url('./img/main-hero.jpg')  no-repeat center/cover;
     position: relative;  
   }
   
@@ -77,22 +77,42 @@ ul a:hover {
     text-align: center;
     margin: auto;
     max-width: 100%;
-    padding: 5rem 1rem; 
+    padding: 1rem;
+    background: var(--primary-color);
+    color: #fefffe; 
 }
 
 .about-content h2 {
-    margin-left: 50px;
     font-weight: 700;
 }
 
 .about-content p {
     display: block;
-    background: var(--secondary-color);
-    height: 200px;
-    padding: 50px;
-    z-index: -1;
-    color: #fefffe;
+    padding: 0 5rem;
 }
+
+/*Featured*/
+
+.featured {
+    height: 500px;
+}
+
+.featured-content h2 {
+    margin: 2rem 0;
+}
+
+.featured-content a {
+    margin: 2rem auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+}
+
+/*Partner*/
 
 .grid-section {
     margin: 2rem 0;
@@ -110,27 +130,20 @@ ul a:hover {
     width: 150px;
 }
 
+/*Contact*/
 .contact-container {
-    display: flex;
-    flex-direction: row;
+    height: 400px;
+    margin: 2rem 0;
 }
 
-.contact-img {
-    width: 100% !important;
-    height: 100% !important;
-    background-size: cover !important;
-    background: no-repeat center center !important;
-    object-fit: cover !important;
-}
 
-.form-container {
+form {
     display: flex;
     flex-direction: column;
-}
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 
-.form-input {
-    display: flex;
-    flex-direction: column;
 }
 
 input {
@@ -146,8 +159,20 @@ input {
     border-bottom: 1px solid #dedede;
 }
 
+/*Footer*/
+
 .footer-section {
-    background: url('./img/hero1.jpg')  no-repeat center/cover;
+    background: var(--text-color);
+}
+
+.footer-content {
+    color: #fefffe;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Utils */
@@ -160,7 +185,11 @@ input {
     color: var(--secondary-color);
     background: transparent;
     letter-spacing: 1px;
+}
 
+.btn-1:hover {
+    background: var(--primary-color);
+    color: #fefffe;
 }
 
 .btn-2 {
@@ -169,7 +198,7 @@ input {
     border: none;
     border-radius: 5px;
     margin-left: 5px;
-    color: #fefffe;
+    color: #fefffe !important;
     background: var(--primary-color);
     letter-spacing: 1px;  
 }
