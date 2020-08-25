@@ -12,11 +12,6 @@
     padding: 0;
 }
 
-html, body {
-    overflow: hidden;
-
-}
-
 body {
     font-family: 'Alata', sans-serif;
 }
@@ -114,10 +109,6 @@ ul a:hover {
 
 /*Partner*/
 
-.grid-section {
-    margin: 2rem 0;
-}
-
 .partner {
     background: #f5f5f5;
 }
@@ -130,19 +121,18 @@ ul a:hover {
     width: 150px;
 }
 
-/*Contact
-.contact-container {
-    height: 400px;
-    margin: 2rem 0;
-}
+/*Contact*/
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-
+.cargo-section {
+   background: var(--primary-color);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   color: #fefffe;
+   padding: 20px;
 }
 
 input {
@@ -162,10 +152,18 @@ input {
     border-bottom: 1px solid #dedede;
 }
 
+textarea {
+    border: 1px solid #d2d2d2;
+    outline: none;
+    font-size: 12px;
+    width: 80%;
+    height: 200px;
+}
+
 /*Footer*/
 
 .footer-section {
-    background: var(--text-color);
+    background: #121212;
 }
 
 .footer-content {
@@ -178,6 +176,29 @@ input {
     justify-content: center;
 }
 
+.footer-contact p {
+    color: var(--accent-color);
+}
+
+.social-media {
+    background: #000;
+    color: #fefffe;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.fab {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
 /* Utils */
 .btn-1 {
     padding: 10px 15px;
@@ -185,7 +206,7 @@ input {
     border: 1px solid #fefffe;
     border-radius: 5px;
     margin-left: 5px;
-    color: var(--secondary-color);
+    color: #fefffe !important;
     background: transparent;
     letter-spacing: 1px;
 }

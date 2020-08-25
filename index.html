@@ -14,15 +14,14 @@
  
  <!--Navigation--> 
  <nav class="header navbar navbar-expand-lg bg-light sticky-top">
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="gratia navbar-brand" href="./index.html">GRATIA BOOKINGS</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     
-    <a class="gratia navbar-brand" href="./index.html">GRATIA BOOKINGS</a>
-
-    <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
     <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
     <li class="nav-item"><a class="nav-link" href="#">About</a></li>   
     <li class="nav-item"><a class="nav-link" href="./deals/deals.html">Discover</a></li>   
@@ -40,7 +39,7 @@
     </p>
     
     <div class="btn-container">
-        <a href="./deals/deals.html" type="button" class="btn btn-1 text-white">VIEW LATEST DEALS</a>
+        <a href="./deals/deals.html" type="button" class="btn btn-1 text-white">DISCOVER LATEST DEALS</a>
     </div>
     
     </div>
@@ -189,21 +188,23 @@
 <section class="contact-section">
 <div class="row contact-container">
 
-<div class="cargo-section">
+<div class="cargo-section col-md-6 col-sm-12">
 <h2>We make your cargo<br> transport simple </h2><br>
 <small>+ Fulfilled and Shipped Fast</small><br>
 <small>+ Secure Warehousing</small><br>
 <small>+ Secure Delivery</small>
 </div>
 
-<div class="form-section">
+<div class="form-section col-md-6 col-sm-12 text-center">
     <h3 class="heading my-3">Get In Touch</h3>
     <p>Contact us for your enquiries about deals and cargo shipping!</p>
-<form class="form-input" id="form"> 
-    <input type="text" id="name" placeholder="Full Name" required>
+<form class="form-input padding my-auto" id="form"> 
+    <input type="text" id="name" class="my-auto" placeholder="Full Name" required>
     <input type="email" id="email" placeholder="Email" required>
+    <input type="number" id="number" placeholder="Phone No." required>
+    <br>
 
-    <label for="comment">What woud you like to know?</label>
+    <label for="comment" class="mr-auto">What woud you like to know?</label>
     <textarea name="comment" id="comment" placeholder="Send us a message or enquiry..">
     </textarea>
 </form>  
